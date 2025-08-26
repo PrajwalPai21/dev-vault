@@ -47,3 +47,6 @@ ReactDOM.createRoot(container).render(button);
 .render cannot render 2 or more elements .render(paragraph,div)
 
 To display multiple Tags in one root element use const variable = <div><h1> <p> <button> etc </div>
+JSX is beneficial because it tells us where the error is.
+
+We can insert Javascript code directly into JSX code using { }
