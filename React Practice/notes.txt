@@ -1,0 +1,49 @@
+What is React?
+React is an External Library used to help create Websites faster.
+
+Script tag lets us load any JS code from anywhere on the Internet.
+External Library = Code outside our PC , and written by someone else.
+
+React & ReactDom are External Libraries.
+React - has shared features.                --> for creating websites
+ReactDOM - features specific to websites.   --> for creating websites
+
+ReactNative - for mobile applications.
+
+DOM(document.) - combines HTML & JS together. Lets them both interact with each other.
+
+-   <div class="js-container"></div>
+-   const container = document.querySelector('.js-container');
+-   ReactDOM.createRoot(container).render('React is Working');
+
+ReactDom.create.... is used to setup react. 
+(container) makes it so that everything is organized and happens inside - <div class="js-container"></div>
+This does not affect other tags/elements in the file.
+.render - Display somehting  inside this element.
+
+<html> -> Represents an Entire website , so everythinghas to go inside.
+
+When using react we dn=ont use normal JS , we use JSX.
+JSX - Javascript XML = Same as normal JS but we can write HTML
+    directly in our Javascript code.
+ 
+Example - const button = <button>hello</button>
+or in normal Javascript -> 
+    const button = document.createElement('button');
+    button.innerHTML = 'hello';
+
+Problem with JSX - our browser does not understand JSX, hence we 
+use Babel library.
+
+
+<script type = "text/babel"> 
+    const button = <button>hello</button>
+</script>
+
+To display the button:
+ReactDOM.createRoot(container).render(button);
+
+
+.render cannot render 2 or more elements .render(paragraph,div)
+
+To display multiple Tags in one root element use const variable = <div><h1> <p> <button> etc </div>
